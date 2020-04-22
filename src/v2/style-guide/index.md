@@ -33,7 +33,7 @@ Là où de multiples et équivalentes options existent, un choix arbitraire a é
 
 ### Priorité D : faire attention
 
-Certaines fonctionnalités de Vue existent pour régler des cas exceptionnels ou rendre la migration d'une vieille version de code plus simple. Mais utiliser avec excès, elles rendront votre code difficile à maintenir et même deviendront une source de bogues. Ces règles mettent en lumière des fonctionnalités potentiellement risquées, décrivant quand et pourquoi elles doivent être évitées.
+Certaines fonctionnalités de Vue existent pour régler des cas exceptionnels ou rendre la migration d'une vieille version de code plus simple. Mais utilisées avec excès, elles rendront votre code difficile à maintenir et même deviendront une source de bogues. Ces règles mettent en lumière des fonctionnalités potentiellement risquées, décrivant quand et pourquoi elles doivent être évitées.
 
 
 
@@ -271,7 +271,7 @@ Puis nous les trions par ordre alphabétique. Quand le DOM est mis à jour, Vue 
 
 Le problème est qu'il y a des cas où il est important de ne pas supprimer les éléments qui resteront dans le DOM. Par exemple, vous pourriez utiliser `<transition-group>` pour animer un tri de liste, ou garder le focus si l'élément rendu était un `<input>`. Dans ces cas, ajouter une clé unique pour chaque élément (par ex. `:key="todo.id"`) va dire à Vue comment être plus prédictif.
 
-De notre expérience, il est toujours mieux de _toujours_ ajouter une clé unique. De cette manière vous et votre équipe n'aurez jamais à vous soucier des effets de bord. Ensuite, dans les rares scénarios critiques de performances où la stabilité des objets n'est pas nécessaire, vous pourrez faire une exception en connaissance de cause.
+De notre expérience, il est préférable de _toujours_ ajouter une clé unique. De cette manière vous et votre équipe n'aurez jamais à vous soucier des effets de bord. Ensuite, dans les rares scénarios critiques de performances où la stabilité des objets n'est pas nécessaire, vous pourrez faire une exception en connaissance de cause.
 
 {% raw %}</details>{% endraw %}
 
